@@ -1,0 +1,89 @@
+
+// Grid System
+// -----------
+
+[class*="container_"]{
+	@width: @columns * (@colWidth + @gutterWidth*2);
+
+	margin-left: auto;
+	margin-right: auto;
+	width: ~'@{width}px';
+}
+
+[class*="grid"]{
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: ~'@{gutterWidth}px';
+	margin-right: ~'@{gutterWidth}px';
+}
+
+[class*="push"],
+[class*="pull"]{ position: relative; }
+
+.alpha { margin-left: 0; }
+.omega { margin-right: 0; }
+
+#grid {
+	.core() {
+
+		// .grid_
+		.grid(@index, @colWidth) when (@index > 0){
+			(~'.container_@{columns} .grid_@{index}') {
+				@width: @colWidth * @index + @gutterWidth * (@index+@index - 2);
+				width: ~'@{width}px';
+			}
+			.grid(@index - 1, @colWidth);
+		}
+		.grid(0, @_) { }
+
+		// .prefix_
+		.prefix(@index, @colWidth) when (@index > 0){
+			(~'.container_@{columns} .prefix_@{index}') {
+				@width: @colWidth * @index + @gutterWidth * (@index+@index);
+				padding-left: ~'@{width}px';
+			}
+			.prefix(@index - 1, @colWidth);
+		}
+		.prefix(0, @_) { }
+
+		// .suffix_
+		.suffix(@index, @colWidth) when (@index > 0){
+			(~'.container_@{columns} .suffix_@{index}') {
+				@width: @colWidth * @index + @gutterWidth * (@index+@index);
+				padding-right: ~'@{width}px';
+			}
+			.suffix(@index - 1, @colWidth);
+		}
+		.suffix(0, @_) { }
+
+		// .push_
+		.push(@index, @colWidth) when (@index > 0){
+			(~'.container_@{columns} .push_@{index}') {
+				@width: @colWidth * @index + @gutterWidth * (@index+@index);
+				
+				left: ~'@{width}px';
+			}
+			.push(@index - 1, @colWidth);
+		}
+		.push(0, @_) { }
+
+		// .pull_
+		.pull(@index, @colWidth) when (@index > 0){
+			(~'.container_@{columns} .pull_@{index}') {
+				@width: @colWidth * @index + @gutterWidth * (@index+@index);
+				
+				left: ~'-@{width}px';
+			}
+			.pull(@index - 1, @colWidth);
+		}
+		.pull(0, @_) { }
+
+		// generate .grid_X, .prefix_X, .suffix_X, .push_X and .pull_X
+		.grid(@columns, @colWidth);
+		.prefix(@columns, @colWidth);
+		.suffix(@columns, @colWidth);
+		.push(@columns, @colWidth);
+		.pull(@columns, @colWidth);
+	}
+}

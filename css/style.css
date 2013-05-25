@@ -1,0 +1,267 @@
+/**
+ * Css3 Helper file
+ */
+/* Linear gradient */
+/**
+ * Text shadow */
+/* Transition */
+/* Opacity */
+/* User select */
+[class*="container_"] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+[class*="grid"] {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+[class*="push"],
+[class*="pull"] {
+  position: relative;
+}
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container_12 .grid_12 {
+  width: 720px;
+}
+.container_12 .grid_11 {
+  width: 660px;
+}
+.container_12 .grid_10 {
+  width: 600px;
+}
+.container_12 .grid_9 {
+  width: 540px;
+}
+.container_12 .grid_8 {
+  width: 480px;
+}
+.container_12 .grid_7 {
+  width: 420px;
+}
+.container_12 .grid_6 {
+  width: 360px;
+}
+.container_12 .grid_5 {
+  width: 300px;
+}
+.container_12 .grid_4 {
+  width: 240px;
+}
+.container_12 .grid_3 {
+  width: 180px;
+}
+.container_12 .grid_2 {
+  width: 120px;
+}
+.container_12 .grid_1 {
+  width: 60px;
+}
+.container_12 .prefix_12 {
+  padding-left: 720px;
+}
+.container_12 .prefix_11 {
+  padding-left: 660px;
+}
+.container_12 .prefix_10 {
+  padding-left: 600px;
+}
+.container_12 .prefix_9 {
+  padding-left: 540px;
+}
+.container_12 .prefix_8 {
+  padding-left: 480px;
+}
+.container_12 .prefix_7 {
+  padding-left: 420px;
+}
+.container_12 .prefix_6 {
+  padding-left: 360px;
+}
+.container_12 .prefix_5 {
+  padding-left: 300px;
+}
+.container_12 .prefix_4 {
+  padding-left: 240px;
+}
+.container_12 .prefix_3 {
+  padding-left: 180px;
+}
+.container_12 .prefix_2 {
+  padding-left: 120px;
+}
+.container_12 .prefix_1 {
+  padding-left: 60px;
+}
+.container_12 .prefix_12 {
+  padding-right: 720px;
+}
+.container_12 .prefix_11 {
+  padding-right: 660px;
+}
+.container_12 .prefix_10 {
+  padding-right: 600px;
+}
+.container_12 .prefix_9 {
+  padding-right: 540px;
+}
+.container_12 .prefix_8 {
+  padding-right: 480px;
+}
+.container_12 .prefix_7 {
+  padding-right: 420px;
+}
+.container_12 .prefix_6 {
+  padding-right: 360px;
+}
+.container_12 .prefix_5 {
+  padding-right: 300px;
+}
+.container_12 .prefix_4 {
+  padding-right: 240px;
+}
+.container_12 .prefix_3 {
+  padding-right: 180px;
+}
+.container_12 .prefix_2 {
+  padding-right: 120px;
+}
+.container_12 .prefix_1 {
+  padding-right: 60px;
+}
+.container_12 .push12 {
+  left: 720px;
+}
+.container_12 .push11 {
+  left: 660px;
+}
+.container_12 .push10 {
+  left: 600px;
+}
+.container_12 .push9 {
+  left: 540px;
+}
+.container_12 .push8 {
+  left: 480px;
+}
+.container_12 .push7 {
+  left: 420px;
+}
+.container_12 .push6 {
+  left: 360px;
+}
+.container_12 .push5 {
+  left: 300px;
+}
+.container_12 .push4 {
+  left: 240px;
+}
+.container_12 .push3 {
+  left: 180px;
+}
+.container_12 .push2 {
+  left: 120px;
+}
+.container_12 .push1 {
+  left: 60px;
+}
+.container_12 .pull12 {
+  left: -720px;
+}
+.container_12 .pull11 {
+  left: -660px;
+}
+.container_12 .pull10 {
+  left: -600px;
+}
+.container_12 .pull9 {
+  left: -540px;
+}
+.container_12 .pull8 {
+  left: -480px;
+}
+.container_12 .pull7 {
+  left: -420px;
+}
+.container_12 .pull6 {
+  left: -360px;
+}
+.container_12 .pull5 {
+  left: -300px;
+}
+.container_12 .pull4 {
+  left: -240px;
+}
+.container_12 .pull3 {
+  left: -180px;
+}
+.container_12 .pull2 {
+  left: -120px;
+}
+.container_12 .pull1 {
+  left: -60px;
+}
+.cl:before,
+.cl:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.cl:after {
+  clear: both;
+}
+.cl {
+  zoom: 1;
+}
+.hidden {
+  display: none;
+}
+.left {
+  text-align: left;
+}
+.centered {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #909090;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Times, Georgia, serif;
+}
+h5,
+h6 {
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
+a:link {
+  color: #0078ff;
+}
+a:visited {
+  color: #0060cc;
+}
+a:hover,
+a:active {
+  color: #006ce6;
+}

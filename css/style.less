@@ -1,0 +1,122 @@
+// Variables
+// ---------
+// 
+// grid
+// colors
+// fonts
+
+
+// grid 
+
+@columns: 12;
+@colWidth: 60;
+@gutterWidth: 10;
+
+
+// colors 
+
+@color1: #909090;
+@color2: #5f5f5f;
+@color3: #333;
+@linkcolor: #0078ff;
+
+
+// fonts
+
+@globalfont: Helvetica, Arial, Tahoma, sans-serif;
+@titleFont: Times, Georgia, serif;
+
+
+// Global
+// --------------------------------
+// 
+// import
+// layout
+// typography
+
+
+// import 
+
+@import "css3.less";
+@import "grid.less";
+
+// layout
+ 
+* {
+    margin: 0;
+    padding: 0;
+    .box-sizing(border-box);
+}
+
+#grid > .core();
+
+.cl:before,
+.cl:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.cl:after { clear: both; }
+.cl { zoom:1; } // IE6, IE7
+
+.hidden { display: none; }
+
+
+.left { text-align: left; }
+.centered { text-align: center; }
+.right { text-align: right; }
+
+
+// typography 
+// ----------
+// 
+// global
+// headings
+// links
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: @color1;
+}
+
+
+// haedings 
+
+h1,
+h2,
+h3,
+h4 { font-family: @titleFont; }
+
+h5,
+h6 {
+	font-family: @globalfont;
+}
+
+
+// links
+
+a:link{
+    color: @linkcolor;
+}
+a:visited {
+	color: darken(@linkcolor, 10%);
+}
+a:hover, a:active{
+	color: darken(@linkcolor, 5%);
+}
+
+
+// Custom
+// --------------------------------
+
+
+
+
+
+
+
+
